@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(156, 79, 173, 255);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+#calculator {
+    background-color: rgba(42, 46, 55, 255);
+    height: 560px;
+    width: 330px;
+    border: 7px solid white;
+    border-radius: 30px;
+}
+#screen {
+    height: 35%;
+}
+
+#buttons {
+    display: grid;
+    grid-template-rows: 72.8px 72.8px 72.8px 72.8px 72.8px;
+    grid-template-columns: 82.5px 82.5px 82.5px 82.5px;
+}
+
+button {
+    width: 82.5px;
+    height: 72.8px;
+    border: 1px solid rgba(42, 46, 55, 255);
+    background-color: rgba(47, 54, 71, 255);
+    color: white;
+    font-size: 27px;
+}
+
+#left-last {
+    border-radius: 0 0 0 20px;
+}
+button.purple {
+    background-color: #c45bdc;
+    font-size: 28px;
+}
+
+button.purple-text {
+    color: #c45bdc;
+}
+button#equal {
+    display: grid;
+    grid-column: 4;
+    grid-row: 4/5;
+    border-radius: 0 0 20px 0;
+    height: 145.6px;
+    padding: 55px 0;
+}
+
+#screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    padding: 0 25px;
+    font-family: sans-serif;
+}
+
+#first-screen {
+    font-size: 28px;
+    color: #abaeb7;
+}
+
+#second-screen {
+    font-size: 74px;
+    color: #ced1d8;
+    padding-bottom: 10px;
+}
